@@ -1,78 +1,151 @@
+
+@media screen and (min-width: 600px){
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 body{
-    width: 100vw;
-    height: 100vh;
-}
-.caixona{
     display: flex;
+    justify-content: center;
 }
-.box-left-1 h2{
-    font-size: 3rem;
-    font-family: "Poppins", sans-serif;
-    font-weight: 750;
-    font-style: normal;
-    margin-left: 10rem;
-    margin-top: 15rem;
+.container{
+    display: flex;
+    flex-direction: column;
+    width: 75rem;
 }
-.box-left-1 p{
-    margin-top: 1.5rem;
-    margin-bottom: 1.5rem;
-    margin-left: 10rem;
-    font-size:1rem;
+header{
+    border-bottom: 1px solid #000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 4rem;
+}
+header .options ul{
+    display: flex;
+    margin-right: 4rem;
+}
+header .options ul li{
+    list-style: none;
+    margin: 0rem 1rem 0rem 1rem;
+}
+header .options ul li a{
+    text-decoration: none;
+    color: black;
     font-family: "DM Sans", sans-serif;
-    font-weight: 400;
+    font-optical-sizing: auto;
+    font-weight: 600;
     font-style: normal;
-    color: #767676;
 }
-.box-left-1 button{
+header .logo{
+    margin-left: 6rem;
+}
+header .logo h3{
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 1.5rem;
+}
+header .logo h3 span{
+    color: #69B99D;
+}
+.linha{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 10rem;
+}
+.linha .text h2,
+.sobreNos .text h2,
+.servicos .text h2{
+    font-size: calc(2rem + .1vw);
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+.linha .text p,
+.sobreNos .text p,
+.servicos .text p,
+.servicos .line .box p{
+    color: #767676;
+    font-family: "DM Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal;
+    margin: 1rem 0rem 2rem 0rem;
+}
+.linha .text button{
+    background-color: #69B99D;
+    border-radius: 5px;
+    border: none;
     width: 10rem;
     height: 3rem;
-    font-size: 0.8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     color: #fff;
-    background-color:#91ddc2;
-    font-family: "DM Sans", sans-serif;
-    font-weight: 400;
-    font-style: normal;    
-    margin-left: 10rem;
-    border: #79c5ab;
-    border-radius: 0.2rem;
+    font-weight: bolder;
 }
-.box-right-1{
-    display: flex;
-    justify-content: end;
+.linha .image{
+    margin: 5rem 0rem 5rem 0rem;
 }
-.box-right-1 img{
-    width: 40rem;
-    height: 25rem;
-    margin-top: 10rem;
-    position: absolute;
-    margin-left: 10rem;
-    border-radius: 0.5rem;
-}
-.box-right-1 .green-box{
-    width: 40rem;
-    height: 25rem;
-    background-color: #CCF4E6;
-    margin-top: 5rem;
-    margin-left: 23rem;
-    margin-right: -10rem;
-    border-radius: 0.5rem;
-}
-.box-left-2{
+.linha .image img{
     width: 30rem;
-    height: 20rem;
-    display: flex;
 }
-.green-box-1{
-    width: 40rem;
-    height: 25rem;
+.sobreNos{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+}
+.sobreNos .text{
+    margin-right: 2em;
+}
+.sobreNos .image .deco{
     background-color: #CCF4E6;
-    margin-top: 5rem;
-    margin-left: 23rem;
-    margin-right: -10rem;
-    border-radius: 0.5rem;
+}
+.sobreNos .image img{
+    width: 30rem;
+}
+.sobreNos .text{
+    margin-top: 1rem
+}
+.servicos{
+    margin-top: 10rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10rem;
+    flex-direction: column;
+}
+.servicos .text{
+    text-align: center;
+}
+.servicos .text p span{
+    color: #CCF4E6;
+}
+.servicos .line{
+    display: flex;
+    justify-content: space-between;
+    width: 60rem;
+}
+.servicos .line .box{
+    text-align: center;
+    box-shadow: 0px;
+    width: 18rem;
+    height: 19rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.servicos .line .caixa img{
+    width: 4,5rem;
+}
+.servicos .line .caixa h3{
+    font-size: calc(2vw + .1rem);
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
 }
